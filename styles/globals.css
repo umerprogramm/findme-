@@ -59,12 +59,42 @@ body{
   margin: 0%;
   padding: 0%;
   font-family: 'Roboto Mono', monospace;
+  background-color: #2C3E50;
 }
 
 
 
+.chat_room{
+  height: 100vh;
+}
 
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
+  color: azure;
+}
 
+.input {
+  position: fixed;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
 
+.loader h1 {
+  text-align: center;
+}
 
+.input button {
+  padding: 15px;
+}
+.input input {
+  padding: 15px;
+  width: 50%;
+  
+}
