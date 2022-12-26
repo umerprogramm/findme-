@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../Navbar/Navbar'
 import Loader from './Loader'
 
 export default function Chat_room() {
   return (
+    <>
+    <Navbar/>
     <main className='chat_room'>
       <div className='loader'>
        <Loader/>
@@ -14,5 +17,7 @@ export default function Chat_room() {
     <button>send</button>
       </div>
     </main>
+    </>
+    
   )
 }

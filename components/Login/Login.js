@@ -11,7 +11,8 @@ export default function Login() {
         auth
           .signInWithPopup(provider)
           .then((result) => {
-            console.log(result)
+            console.log(result.credential.idToken)
+            localStorage.setItem('jwt',result.credential.idToken)
             Dispatch(LogIn({user : 'login' }))
           })
           .catch(() => alert("sorry,you cannot sign in"));
