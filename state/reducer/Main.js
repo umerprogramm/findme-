@@ -1,4 +1,4 @@
-import {ChangeState} from "./reducer"
+import {ChangeState} from "./Reducer"
 import {  combineReducers  } from 'redux'
 
 
