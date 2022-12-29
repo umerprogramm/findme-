@@ -25,7 +25,7 @@ export default function Chat_room() {
     }
     socketInitializer();
    
-  })
+  },[])
   const Message_sender = ()=>{
 
     socket.emit('input-change',[...data,input] )
